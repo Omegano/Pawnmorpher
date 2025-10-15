@@ -141,6 +141,7 @@
             <xs:enumeration value="Fox_Arctic"/>
             <xs:enumeration value="Fox_Fennec"/>
             <xs:enumeration value="Gazelle"/>
+            <xs:enumeration value="GuineaPig"/>
             <xs:enumeration value="Hare"/>
             <xs:enumeration value="Husky"/>
             <xs:enumeration value="Ibex"/>
@@ -166,6 +167,28 @@
             <xs:enumeration value="Wolf_Timber"/>
             <xs:enumeration value="Wolf_Arctic"/>
             <xs:enumeration value="YorkshireTerrier"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Gender">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None" />
+            <xs:enumeration value="Male" />
+            <xs:enumeration value="Female" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PreceptImpact">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Low" />
+            <xs:enumeration value="Medium" />
+            <xs:enumeration value="High" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MemeCategory">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal" />
+            <xs:enumeration value="Structure" />
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>

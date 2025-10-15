@@ -15,6 +15,13 @@
 		<taleOnCompletion>PutIntoCryptosleep</taleOnCompletion>
 	</JobDef>
 
+	<JobDef>
+		<defName>PM_CarrySpecialToMutagenChamber</defName>
+		<driverClass>Pawnmorph.Jobs.Driver_DeliverThingToChamber</driverClass>
+		<reportString>carrying TargetA to mutagen chamber.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>MutagenicChamber</defName>
 		<label>mutagenic chamber (depricated)</label>
@@ -114,9 +121,6 @@
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingClass>Pawnmorph.Building_MutagenModulator</thingClass>
-		<researchPrerequisites>
-			<li>ChamberModulator</li>
-		</researchPrerequisites>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
@@ -194,9 +198,6 @@
 		</thingCategories>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingClass>Pawnmorph.Building_MutagenModulator</thingClass>
-		<researchPrerequisites>
-			<li>AdvancedMutagenChambers</li>
-		</researchPrerequisites>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
@@ -273,9 +274,6 @@
 			<li>BuildingsProduction</li>
 		</thingCategories>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<researchPrerequisites>
-			<li>AdvancedMutagenChambers</li>
-		</researchPrerequisites>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<passability>PassThroughOnly</passability>

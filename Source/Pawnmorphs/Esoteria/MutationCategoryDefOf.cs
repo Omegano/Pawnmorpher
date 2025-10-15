@@ -5,20 +5,15 @@ using RimWorld;
 
 namespace Pawnmorph
 {
-    /// <summary>
-    /// static class that contains various Mutation Category defs 
-    /// </summary>
-    [DefOf]
-    public static class MutationCategoryDefOf
-    {
-        static MutationCategoryDefOf()
-        {
-            DefOfHelper.EnsureInitializedInCtor(typeof(MutationCategoryDef));
-        }
-
-        /// <summary>
-        /// mutation category containing all mutations that can result from failed chamber tf 
-        /// </summary>
-        public static MutationCategoryDef PM_ChamberFailures; 
-    }
+	/// <summary>
+	/// static class that contains various Mutation Category defs 
+	/// </summary>
+	[DefOf]
+	public static class MutationCategoryDefOf
+	{
+		static MutationCategoryDefOf()
+		{
+			DefOfHelper.EnsureInitializedInCtor(typeof(MutationCategoryDefOf));
+		}
+	}
 }
